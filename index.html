@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Criptografia com CryptoJS</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Criptografia com CryptoJS</h1>
+    <label for="texto">Digite o texto:</label>
+    <input type="text" id="texto" placeholder="Escreva algo aqui...">
+
+    <label for="chave">Digite a chave secreta:</label>
+    <input type="text" id="chave" placeholder="Insira a chave secreta">
+
+    <button onclick="criptografar()">Criptografar</button>
+    <button onclick="descriptografar()">Descriptografar</button>
+
+    <h3>Resultado:</h3>
+    <textarea id="resultado" rows="4" readonly></textarea>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
